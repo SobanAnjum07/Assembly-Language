@@ -6,9 +6,9 @@ main proc
 mov AX,@data
 mov DS, AX
 
-mov DI, offset array1
-mov SI, offset array2
-mov cx, 05
+mov DI, offset array1 ; give the array the adress of array1
+mov SI, offset array2 ; give the si the offset adress of array2
+mov cx, 05 ; initialize the counter and store 5 in it
 
 again: mov al, [si]
     mov bl , [di]
